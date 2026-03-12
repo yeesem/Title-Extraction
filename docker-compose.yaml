@@ -1,0 +1,10 @@
+services:
+  grobid:
+    image: lfoppiano/grobid:0.8.2
+    ports:
+      - "8070:8070"
+    tty: true
+    deploy:
+      resources:
+        limits:
+          memory: 4g
